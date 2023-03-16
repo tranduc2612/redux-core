@@ -1,0 +1,32 @@
+1. configureStore({reducer: {keyreducer: hamreducer} })
+- con fix middle ware ở phía bên dưới thay vì mình dùng createStore(reducer)
+
+2. const tển reducer = createReducer(initial value,{
+	case1: (state,action) => {thực thi action 1}
+	case2: (state,action) => {thực thi action 2}
+	case3: (state,action) => state + 1 // thậm trí có thể thay đổi trực tiếp giá trị của state (mutate)
+})
+
+Lưu ý: không được sử dụng cả 2 cách imutate và mutate trong 1 reducer
+
+tự handle defaule case luôn
+
+3. createAction
+const increment = createAction("Add")
+const action = increment(giá trị payload)
+=> action sẽ tương đương với việc returns
+{
+  type: "add",
+  payload: 3	
+}
+
+increment.toString() => in ra string action
+
+4.createSlice()
+
+5.createSelector()
+
+6.createAsyncThunk()
+
+7.createEntityAdapter() 
+
