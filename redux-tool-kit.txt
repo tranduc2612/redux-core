@@ -22,7 +22,7 @@ const action = increment(giá trị payload)
 
 increment.toString() => in ra string action
 
-4.createSlice()
+4.createSlice() // tạo luôn action và reducer
 
 5.createSelector()
 
